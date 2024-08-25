@@ -5,6 +5,8 @@ shared = {
 
 
 
+
+require 'modules.missions.loader'
 if IsDuplicityVersion() then
     server = {}
     require 'modules.bridge.'..shared.framework..'.server'
