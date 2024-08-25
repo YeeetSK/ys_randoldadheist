@@ -2,7 +2,7 @@ fx_version "cerulean"
 game "gta5"
 lua54 'yes'
 
-author 'Yetti Development'
+author 'Your Dad'
 description ''
 
 shared_scripts {
