@@ -7,7 +7,7 @@ shared = {
 
 if IsDuplicityVersion() then
     server = {}
-    require 'modules.bridge.'shared.framework'.server'
+    require 'modules.bridge.'..shared.framework..'.server'
     require 'server/db'
     require 'server/main'
 
@@ -15,6 +15,6 @@ if IsDuplicityVersion() then
 else
     client = {}
 
-    require 'modules.bridge.'shared.framework'.client'
+    require 'modules.bridge.'..shared.framework..'.client'
     require 'client/main'
 end
