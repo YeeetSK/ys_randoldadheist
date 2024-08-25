@@ -10,3 +10,10 @@ function CreateMissionInfoTable()
         ]]
     )
 end
+
+function GetPlayerMission(playerId)
+    local currentMission =  MySQL.single.await('SELECT `currentmission` FROM `ys_missioninfo` WHERE `playerid` = ? LIMIT 1', {
+        playerId
+    })
+    return currentMission
+end
