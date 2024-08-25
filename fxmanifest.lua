@@ -23,7 +23,10 @@ shared_scripts {
 server_script '@oxmysql/lib/MySQL.lua'
 
 files {
-    'client/main.lua'
+    'client/main.lua',
+    'modules/missions/loader.lua',
+    'modules/missions/data/**.lua',
+    'modules/bridge/**/**.lua'
 }
 
 escrow_ignore {
